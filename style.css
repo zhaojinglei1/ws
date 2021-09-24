@@ -1,0 +1,101 @@
+#main {
+  display: inline-block;
+  /* margin: auto; */
+  margin-top: 10px;
+  border: 1px solid lightgray;
+  width: 300px;
+  height: 600px;
+  list-style: none;
+  padding: 0;
+
+  /* position: relative; */
+  left: calc(50% - 150px);
+  /* left: calc(50% - attr(width)/2); */
+}
+
+
+
+#main>li {
+  position: relative;
+  width: 100%;
+  display: block;
+  cursor: pointer;
+  border: 1px solid wheat;
+  overflow: hidden;
+
+  /* word-wrap: normal; */
+  word-wrap: break-word;
+
+  padding: 0 15px;
+
+
+  /* border-radius: 12px; */
+}
+
+#main>li:hover {
+  box-shadow: 0px 0px 10px 2px lightgray;
+}
+
+
+
+.carousel-inner>.carousel-item>img {
+  /* height: 200px; */
+  width: 100%;
+
+}
+
+.delete {
+  font-family: '楷体';
+  font-size: 0.8em;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border: 1px solid lightblue;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  visibility: hidden;
+  cursor: pointer;
+
+  /* border-radius: inherit; */
+}
+
+.delete.delFirst {
+  /* background-color: black; */
+  right: 40px;
+}
+
+#main>li:hover .delete {
+  visibility: visible;
+}
+
+.container.showArea {
+  display: flex;
+}
+
+.container.controlBoard {
+  /* display: inline-block; */
+  /* position: relative;
+  left: 30px; */
+  width: 400px;
+  height: 600px;
+  border: 1px solid #aaaaaa;
+  margin: 10px;
+
+  visibility: hidden;
+}
+
+#formControl {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 5px;
+
+  transition: all 1s linear;
+}
+
+.textType {
+  display: none;
+}
+
+.imageType {
+  display: none;
+}
