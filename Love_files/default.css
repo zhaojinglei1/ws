@@ -13,4 +13,4 @@ a {color:#000;font-size:14px;}
 .hand{cursor:pointer;}
 .say{margin-left:12px;font-family:STKaiti;color:rgb(231, 49, 149);}
 .space{margin-right:150px;}
-#sss4{font-family:STKaiti;color: rgb(231, 49, 149);}
+#sss4{font-family:STKaiti;color: rgb(231, 49, 149);display: inline;}

@@ -23,12 +23,32 @@
             
            window.location.href = 'http://loveshan-forever.top/'
         }
+        function onclicks2(){
+            console.log('asdasdas');
+            var audio = document.querySelector("audio");
+            audio.pause();
+            var audio3 = document.getElementById("audio3");
+            audio3.pause();
+            var audio2 = document.getElementById("audio2");
+            audio2.play();
+
+        }
+        function onclicks3(){
+            console.log('asdasdas');
+            var audio = document.querySelector("audio");
+            audio.pause();
+            var audio2 = document.getElementById("audio2");
+            audio2.pause();
+            var audio3 = document.getElementById("audio3");
+            audio3.play();
+
+        }
     </script>
 
 </head>
 
 <body>
-    <div id="main">
+    <div id="main" >
         <div id="error">您使用的浏览器无法支持即将显示的内容，请换成谷歌(<a
                 href="http://www.google.cn/chrome/intl/zh-CN/landing_chrome.html?hl=zh-CN&brand=CHMI">Chrome</a>)或者火狐(<a
                 href="http://firefox.com.cn/download/">Firefox</a>)浏览器</div>
@@ -59,15 +79,21 @@
                 </div>
             </div>
             <div id="clock-box">
-                <a href="#" onclick=onclicks() target="_blank" id="sss4">温姗 &nbsp 与 &nbsp</a> <a href="#" target="_blank"
-                    id="sss4">赵京雷&nbsp在一起的</a>
-                <div id="clock"></div>
+                <a href="#" onclick=onclicks() target="_blank" id="sss4">温姗 &nbsp 与 &nbsp</a> <li onclick=onclicks2() href= "javascript:;" target="_blank"
+                    id="sss4">赵京雷&nbsp在一起的</li>
+                <div id="clock" onclick=onclicks3()></div>
             </div>
             <canvas id="canvas" width="1100" height="680"></canvas>
         </div>
 
         <audio loop="loop">
             <source src="./卓文萱 _ 曹格 - 梁山伯与茱丽叶.mp3" type="audio/mpeg">
+        </audio>
+        <audio loop="loop" id = 'audio2'>
+            <source src="./because of you .mp3" type="audio/mpeg">
+        </audio>
+        <audio loop="loop" id = 'audio3'>
+            <source src="./Ed Sheeran-Thinking Out Loud.mp3" type="audio/mpeg">
         </audio>
 
     </div>
